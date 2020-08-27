@@ -17,6 +17,7 @@
     <module>workflow-service</module>
     <module>workflow-model</module>
     <module>workflow-common</module>
+    <module>workflow-conf</module>
   </modules>
 
   <properties>
@@ -24,7 +25,33 @@
   </properties>
 
   <dependencyManagement>
-
+    <dependencies>
+      <dependency>
+        <groupId>cn.myproject.workflow</groupId>
+        <artifactId>workflow-common</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>cn.myproject.workflow</groupId>
+        <artifactId>workflow-model</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>cn.myproject.workflow</groupId>
+        <artifactId>workflow-service</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>cn.myproject.workflow</groupId>
+        <artifactId>workflow-web</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>cn.myproject.workflow</groupId>
+        <artifactId>workflow-conf</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+    </dependencies>
   </dependencyManagement>
 
   <dependencies>
